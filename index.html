@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Кинематика. Физика для чайников.</title>
+    </head>
+    <body>
+        <h1>Кинематика</h1>
+        <p><span style="color:red">Кинематикой</span> называют раздел <strong>механики</strong>, в котором движение тел рассматривается без выяснения причин этого движения.</p>
+
+        <p><span style="color:red">Механическим движением тела</span> называют изменение <strong>его положения в пространстве</strong> относительно других тел с течением времени.</p>
+
+        <p><span style="color:red">Перемещением тела</span> называют направленный отрезок прямой, соединяющий начальное положение тела с его конечным положением.
+        При <strong>равномерном</strong> (с постоянной скоростью) движении путь <var>L</var> может быть найден по формуле:<br/><var>L</var> = <var>v</var> * <var>t</var>,
+        <br/>где: <var>v</var> – скорость тела, <var>t</var> – время в течении которого оно двигалось.</p>
+
+        <p><span style="color:red">Скорость</span> – векторная величина, характеризующая быстроту перемещения тела в пространстве.
+        <br/><span style="color:red">Средняя скорость пути</span> – это отношение всего пути ко всему времени движения:<br/><var>v</var><sub>ср. пути</sub> = <var>L</var><sub>полн.</sub>/<var>t</var><sub>полн.</sub> </p>
+        <p><span style="color:red">Физика</span> - это <s>СКУЧНО</s> ИНТЕРЕСНО!</p>
+        <p><strong><span style="color:red">P.S.</span></strong> Для всех желающих оставляю код на c++ для подсчёта средней скорости:<br/></p>
+        <pre>
+            <code>
+#include &lt;locale.h&gt;
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+    double s, t;
+    setlocale(0, "russian");
+    cout « "Введите, пройденный путь в метрах: ";
+    cin » s;
+    cout « "Введите, затраченное время в секундах: ";
+    cin » t;
+    cout « "Средняя скорость: " « s / t « " м/c" « endl;
+    return 0;
+}
+            </code>
+        </pre>
+        <h1>Расписание</h1>
+        <table border="1">
+            <tr>
+                <th colspan="3">Вторник</th>
+            </tr>
+            <tr>
+                <td>8:30-10:05</td>
+                <td rowspan="2">Языки интернет программирования</td>
+                <td rowspan="2">Каф.</td>
+            </tr>
+            <tr>
+                <td>10:15-11:50</td>
+            </tr>
+            <tr>
+                <td>12:00-13:35</td>
+                <td>Языки интернет программирования</td>
+                <td>501ю</td>
+            </tr>
+            <tr>
+                <td>13:50-13:25</td>
+                <td>Базы данных</td>
+                <td>501ю</td>
+            </tr>
+        </table>
+
+        <h1>Опрос</h1>
+        <form>
+        <table>
+        <tr><td>Имя:</td><td><input type="text" name="fname" /></td></tr>
+        <tr><td>Фамилия:</td><td> <input type="text" name="lname" /></td></tr>
+        <tr><td>Вам понравился сайт?</td><td> <input type="radio" name="choice" value="да"/>да
+        <input type="radio" name="choice" value="нет"/>нет</td></tr>
+        <tr><th colspan="2"><input type="submit" value="Отправить" /></th></tr>
+        </table>
+        </form>
+    </body>
+</html>
